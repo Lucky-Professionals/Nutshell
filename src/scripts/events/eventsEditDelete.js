@@ -10,10 +10,9 @@ const edEvent = (activeUser) => {
                 eventsDomRender(activeUser)
             )
         }
-        // TODO: change values
         if (evt.target.id.startsWith("edit")) {
           const id = evt.target.id.split("!")[1]
-          document.querySelector("#saveBtn").id = `editBtn!${id}`
+          document.querySelector("#saveEventBtn").id = `editEventBtn!${id}`
             eventsDataManager.singleEvent(id).then((event) => {
                document.querySelector("#name").value = event.name
                document.querySelector("#date").value = event.date

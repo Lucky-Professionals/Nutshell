@@ -1,7 +1,6 @@
 import {eventsDataManager} from "./eventsDataManager"
 import {eventsEntryHtml} from "./eventsEntryHtml"
-// TODO: finish this shit
-
+// function that targets events output and adds eventEntry
 const dom = (eventEntry) => {
     document.querySelector("#eventsOutput").innerHTML += eventEntry
 }

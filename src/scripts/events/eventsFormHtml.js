@@ -9,7 +9,7 @@ Date:<br>
 <input type="datetime-local" name="Date" id="date"><br>
 Location:<br>
 <input type="text" name="Location" id="location"><br>
-<button id="saveBtn">Save</button>
+<button id="saveEventBtn">Save</button>
 </div>`
   },
   clearForm: () => {
