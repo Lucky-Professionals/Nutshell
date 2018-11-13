@@ -4,8 +4,8 @@ const url = "http://localhost:3000/messages"
 // declaring variable for fetch calls
 const messageDataManager = {
 // getting data from database
-    getMessages: (id) => {
-        return fetch(`${url}?userId=${id}`)
+    getMessages: () => {
+        return fetch(`${url}`)
             .then(res => res.json())
     },
 // posting data to database
